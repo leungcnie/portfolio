@@ -1,14 +1,11 @@
 // import '../styles/Home.scss';
 import styled from 'styled-components';
 
-const Test = styled.div`
-  color: #fff;
-`;
-
 export default function Home(props) {
   return (
-    <Test>
-      <h1>Home</h1>
-    </Test>
+    <>
+      <h1>Hi, I'm Connie.</h1>
+      <p>I'm a full stack developer based in Vancouver, BC.</p>
+    </>
   )
 }

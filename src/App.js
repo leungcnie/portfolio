@@ -9,9 +9,8 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 const AppWrapper = styled.div`
-  background-color: ${props => props.theme.tangerineYellow};
   text-align: center;
-  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Concert One', sans-serif;
 `;
 
 

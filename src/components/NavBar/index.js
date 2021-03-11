@@ -1,12 +1,16 @@
 import React from 'react'
-import { Nav, NavLink, Bars, NavMenu } from './NavBarElements';
+import { Nav, NavLink, Bars, NavMenu, Logo } from './NavBarElements';
+import { RiPlantLine } from "react-icons/ri";
 
 const NavBar = () => {
   return (
     <>
       <Nav>
         <NavLink to="/">
-          <h1>Logo</h1>
+          <Logo>
+            <RiPlantLine />
+            <h1>CL</h1>
+          </Logo>
         </NavLink>
         <Bars />
         <NavMenu>
