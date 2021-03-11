@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   padding: 0.5rem calc((100w - 1000px) / 2);
   z-index: 10;
   font-size: 1.5rem;
+  font-family: 'Fredoka One', sans-serif;
 `;
 
 export const NavLink = styled(Link)`
@@ -22,12 +23,23 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
 
-  &.active {
-    color: blue;
+  &:hover {
+    color: #000;
   }
+`;
+
+export const NavSocial = styled.a`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0;
+  height: 100%;
+  cursor: pointer;
 
   &:hover {
-    color: purple;
+    color: #000;
   }
 `;
 

@@ -20,16 +20,16 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route exact path="/" component={Home}>
+          <Route exact path="/portfolio" component={Home}>
             <Home />
           </Route>
-          <Route exact path="/about" component={About}>
+          <Route exact path="/portfolio/about" component={About}>
             <About />
           </Route>
-          <Route exact path="/projects" component={Projects}>
+          <Route exact path="/portfolio/projects" component={Projects}>
             <Projects />
           </Route>
-          <Route exact path="/contact" component={Contact}>
+          <Route exact path="/portfolio/contact" component={Contact}>
             <Contact />
           </Route>
           <Route exact path="*" component={NotFound}>
