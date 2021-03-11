@@ -1,20 +1,26 @@
-import './styles/App.scss';
+// import './styles/App.scss';
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import styled from 'styled-components';
 
 // Pages
-import Welcome from './pages/Welcome';
+import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
+const AppWrapper = styled.div`
+  background-color: ${props => props.theme.tangerineYellow};
+`;
+
+
 function App() {
   return (
-    <div className="App">
+    <AppWrapper>
       <Router>
         <Switch>
-          <Route exact path="/" component={Welcome}>
-            <Welcome />
+          <Route exact path="/" component={Home}>
+            <Home />
           </Route>
           <Route exact path="/about" component={About}>
             <About />
@@ -30,7 +36,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    </div>
+    </AppWrapper>
   );
 }
 
