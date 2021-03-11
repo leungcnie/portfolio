@@ -1,5 +1,5 @@
 import './styles/App.scss';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 // Pages
 import Welcome from './pages/Welcome';
@@ -13,19 +13,19 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact route="/" component={Welcome}>
+          <Route exact path="/" component={Welcome}>
             <Welcome />
           </Route>
-          <Route exact route="/about" component={About}>
+          <Route exact path="/about" component={About}>
             <About />
           </Route>
-          <Route exact route="/projects" component={Projects}>
+          <Route exact path="/projects" component={Projects}>
             <Projects />
           </Route>
-          <Route exact route="/contact" component={Contact}>
+          <Route exact path="/contact" component={Contact}>
             <Contact />
           </Route>
-          <Route exact route="*" component={NotFound}>
+          <Route exact path="*" component={NotFound}>
             <NotFound />
           </Route>
         </Switch>
