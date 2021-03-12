@@ -24,7 +24,7 @@ export default function Home(props) {
     <HomeWrapper>
       <Heading>Hi, I'm Connie.</Heading>
       <Paragraph>I'm a full stack developer based in Vancouver, BC. <br />
-      I'm passionate about <Highlight>playful design</Highlight> and writing <Highlight>clean, maintainable code.</Highlight></Paragraph>
+      I love <Highlight>playful design</Highlight> and writing <Highlight>clean, maintainable code.</Highlight></Paragraph>
     </HomeWrapper>
   )
 }
